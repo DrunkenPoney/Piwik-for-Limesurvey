@@ -3,7 +3,7 @@ A Plugin for limesurvey that adds the Piwik tracking code, enabling you to track
 
 This is currently *alpha* software. It's progressing rapidly, and will be Beta shortly (see 'todo' below). Use it at your own risk.
 
-#Installation 
+# Installation 
 1. Unzip and copy the 'PiwikPlugin' directory into  your Limesurvey Plugin directory
  - Or download using Git like this:
  ```
@@ -13,7 +13,7 @@ This is currently *alpha* software. It's progressing rapidly, and will be Beta s
 2. Use Limesurvey's 'Plugin Manager' to specify at least the Piwik URL and SiteID
 3. Test that it's working for you. 
 
-#Comments wanted!
+# Comments wanted!
 Please do submit an issue if you have anything to add: Feedback, commits and criticism are all wanted.
 
 # Features & Todo:
@@ -42,21 +42,21 @@ Please do submit an issue if you have anything to add: Feedback, commits and cri
 - [ ] Use Piwik PHP tracking to avoid use of cookies. See [Piwik Docs](http://piwik.org/docs/tracking-api/#use-case-tracking-data-using-the-php-client)
 - [ ] Manual on how to use the plugin and paradata
 
-#Ideas
+# Ideas
 Not on the 'todo' list, but for consideration in future versions if there is enough interest:
 - Track a random subsample of users' pages/events/content interactions to reduce the amount of data collected by Piwik.
 
 ------------------------------------------------------------------------------------------
-#Plugin options
+# Plugin options
 
-##Track Admin pages
+## Track Admin pages
 Options: Enable / Disable
 Scope: Global 
 
 Specifies whether admin pages should be tracked in Piwik. This may be useful for some use cases, such as tracking how much effort it takes to make a survey.
 
 
-##Track Survey Pages
+## Track Survey Pages
 Options: Enable / Disable
 Scope: Survey (Can be turned on/off per survey)
 
@@ -89,7 +89,7 @@ Scope: Global (turned on/off for ALL surveys)
 
 Piwik for Limesurvey tracks when a question is shown to respondents (i.e. an impression) and each time they use one of the question's answer options (i.e. an interaction). With this information, Piwik calculates an 'interaction rate' for each question. This equates to the number of times the respondent answered, or changed their answer, for each question.
 
-###Example scenario: Identify problematic questions
+### Example scenario: Identify problematic questions
 Ideally the interaction rate would be 100%: this indicates that (on average) every respondent answered the question. If it was less than 100%, it indicates some users were shown the question but did not answer it. If it is more than 100%, users were shown the question but changed their answers multiple times. 
 
 This indicate:
@@ -97,11 +97,11 @@ This indicate:
 - insufficient answer options: are your answer options exhaustive? 
 - sensitive questions: respondents might refuse to answer questions on some topics
 
-###Example scenario: Check sample sizes for filtered/sequenced/routed questions
+### Example scenario: Check sample sizes for filtered/sequenced/routed questions
 The absolute number of impressions indicates how many people were shown, and may have answered, that question. This is a quick way of checking whether you might have enough data do your analysis. 
 
 
-##Event tracking: Track important survey events
+## Event tracking: Track important survey events
 Options: 
 - Enabled / Disabled
 - Event Category (Default: Survey)
